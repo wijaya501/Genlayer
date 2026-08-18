@@ -1,1 +1,25 @@
-# GenLayer AI-Powered Voting An Intelligent Contract project on the GenLayer Testnet ## 📝 Description This is a simple voting contract built using GenLayer's `.gen` language. Key Advantage: AI verifies every "vote reason" to ensure relevance and prevent spam. ## ✨ Key Features - `createVote(topic)` : Create a new vote - `vote(id, choice, reason)` : Cast a vote (providing a reason is mandatory) - `AI Verify` : Automatically checks for spam or irrelevant reasons - `getResults(id)` : View voting results ## 🚀 How to Run 1. Open the GenLayer Testnet 2. Deploy the `Voting.gen` file 3. Call the functions listed above ## 🛠️ Tech Stack - Language: GenLayer `.gen` - Network: GenLayer Testnet This project was created for the GenLayer Builder Program 2026.
+# GenLayer AI-Powered Voting
+
+An Intelligent Contract project on the GenLayer Testnet
+
+## 📝 Description
+This is a simple voting contract built using GenLayer's `.gen` language. 
+The key feature is AI verification to check if the vote reason is relevant and not spam.
+
+## ✨ Key Features
+- Create new votes with a topic
+- Vote with a required reason
+- AI checks the reason automatically
+- Get real-time voting results
+
+## 🚀 How to Use
+1. Deploy `Voting.gen` to GenLayer Testnet
+2. Call `createVote("Your Topic")`
+3. Call `vote(voteId, true, "Your reason")`
+4. Check results with `getResults(voteId)`
+
+## 🛠️ Tech Stack
+- Language: GenLayer `.gen`
+- Network: GenLayer Testnet
+
+Built for GenLayer Builder Program 2026
