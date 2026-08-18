@@ -1,0 +1,20 @@
+from genlayer import contract
+
+@contract
+class Voting:
+    def __init__(self):
+        self.votes = {}
+        self.candidates = ["A", "B", "C"]
+
+    def vote(self, candidate: str, reason: str):
+        if candidate not in self.candidates:
+            return "Kandidat tidak ada"
+        if len(reason) < 5:
+            return "Alasan terlalu singkat"
+        if candidate not in self.votes:
+            self.votes[candidate] = 0
+        self.votes[candidate] += 1
+        return f"Vote untuk {candidate} tercatat. Alasan: {reason}"
+
+    def get_results(self):
+        return self.votes
